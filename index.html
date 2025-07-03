@@ -6,16 +6,25 @@
   <meta name="description" content="Justice for Joseph Lagerman – uncovering truth, exposing injustice, and fighting for fair sentencing." />
   <title>Justice for Joey | Letters for Justice</title>
   <style>
-    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#333; }
+    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#333; background-color: #fff; }
     header, section { padding:2rem 1rem; max-width:800px; margin:0 auto; }
-    header { text-align:center; background:#111; color:#fff; }
+    header { text-align:center; background:#001f3f; color:#fff; }
     header h1 { font-size:2.5rem; margin:0; }
-    .tagline { font-size:1.2rem; color:#ddd; margin-top:0.5rem; }
+    .tagline { font-size:1.2rem; color:#ffeb3b; margin-top:0.5rem; }
     #truth h2 { color:#660000; margin-top:2rem; }
     #truth p { margin-bottom:1rem; }
-    #actions ul { list-style:none; padding:0; display:flex; gap:1rem; justify-content:center; }
-    #actions a { background:#ff3333; color:#fff; padding:0.75rem 1.2rem; text-decoration:none; border-radius:4px; }
+    #actions ul { list-style:none; padding:0; display:flex; gap:1rem; flex-wrap:wrap; justify-content:center; }
+    #actions a {
+      background:#ffeb3b; color:#000; padding:0.75rem 1.2rem; text-decoration:none;
+      border-radius:4px; font-weight:bold; border: 2px solid #000;
+    }
     footer { background:#f4f4f4; padding:1rem; text-align:center; font-size:0.9rem; }
+    form input, form textarea, form button {
+      display:block; width:100%; margin-bottom:1rem; padding:0.5rem;
+      font-size:1rem; border:1px solid #ccc; border-radius:4px;
+    }
+    form button { background:#001f3f; color:#fff; border:none; cursor:pointer; }
+    form button:hover { background:#004080; }
   </style>
 </head>
 <body>
@@ -26,26 +35,54 @@
   </header>
 
   <section id="truth">
-  <h2>Deep Dive: The Truth They Buried</h2>
-  <p>
-    Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.
-  </p>
-  <p>
-    He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.
-  </p>
-  <p>
-    And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing. The same judge who, with a smirk, decided who the villain was before the facts could even speak.
-  </p>
-  <p>
-    Joseph apologized to the officers who arrested him. But instead of facing them directly, he looked at the judge—a man who had already decided, “I’m not buying what you’re selling.” Meanwhile, the very officers asking for maximum sentencing were seen in a post-arrest photo in Joseph’s living room, smiling with arms around each other, completely uninjured.
-  </p>
-  <p>
-    That photo never made it to court. Neither did the audio evidence where dispatch says, “shots fired—at the ground—suspect in custody,” or the video where Joseph is dragged out of a bathroom, not resisting. His public defenders—overworked, underresourced, and in one case connected to his girlfriend’s prior case—never pushed hard enough.
-  </p>
-  <p>
-    Joseph watched one of those officers on TV later—drinking a beer, watching the Badgers, laughing like the case never happened. The weight that broke Joseph’s life didn’t even dent theirs.
-  </p>
-  <p>
-    But Joey’s not done. And neither are we. Truth doesn’t die in silence—it rises with every voice that dares to speak it.
-  </p>
-</section>
+    <h2>Deep Dive: The Truth They Buried</h2>
+    <p>
+      Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.
+    </p>
+    <p>
+      He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.
+    </p>
+    <p>
+      And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing. The same judge who, with a smirk, decided who the villain was before the facts could even speak.
+    </p>
+    <p>
+      Joseph apologized to the officers who arrested him. But instead of facing them directly, he looked at the judge—a man who had already decided, “I’m not buying what you’re selling.” Meanwhile, the very officers asking for maximum sentencing were seen in a post-arrest photo in Joseph’s living room, smiling with arms around each other, completely uninjured.
+    </p>
+    <p>
+      That photo never made it to court. Neither did the audio evidence where dispatch says, “shots fired—at the ground—suspect in custody,” or the video where Joseph is dragged out of a bathroom, not resisting. His public defenders—overworked, underresourced, and in one case connected to his girlfriend’s prior case—never pushed hard enough.
+    </p>
+    <p>
+      Joseph watched one of those officers on TV later—drinking a beer, watching the Badgers, laughing like the case never happened. The weight that broke Joseph’s life didn’t even dent theirs.
+    </p>
+    <p>
+      But Joey’s not done. And neither are we. Truth doesn’t die in silence—it rises with every voice that dares to speak it.
+    </p>
+  </section>
+
+  <section id="actions">
+    <h2>Take Action</h2>
+    <ul>
+      <li><a href="https://www.change.org/JHFH7rnTCS" target="_blank">Sign the Petition</a></li>
+      <li><a href="#truth">Read the Story</a></li>
+      <li><a href="#contact">Send a Letter of Support</a></li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Support</h2>
+    <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out:</p>
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Letters for Justice. Built for truth—not profit.</p>
+    <p>Website by Sissy. Domain: <a href="https://justiceforjoey.us">justiceforjoey.us</a></p>
+  </footer>
+
+</body>
+</html>
