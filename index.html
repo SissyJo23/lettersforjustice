@@ -5,40 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Justice for Joey | Letters for Justice</title>
   <style>
-    /* [Previous CSS remains unchanged] */
-    .petition-container {
+    /* Base Styles */
+    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; color:#333; }
+    section { padding:2rem 1rem; max-width:800px; margin:0 auto; }
+    
+    /* Petition Container */
+    .action-container {
       background: #f8f8f8;
-      padding: 25px;
+      padding: 2rem;
       border: 2px solid #660000;
-      margin: 30px 0;
-      text-align: center;
       border-radius: 8px;
+      text-align: center;
+      margin: 2rem 0;
     }
-    .petition-heading {
+    .action-title {
       color: #660000;
-      margin-top: 0;
       font-size: 1.8rem;
+      margin: 0 0 1rem;
     }
-    .petition-btn {
+    .action-btn {
       background: #660000;
       color: white;
-      padding: 15px 30px;
+      padding: 1rem 2rem;
       font-size: 1.2rem;
       border-radius: 5px;
       display: inline-block;
-      margin: 15px 0;
       text-decoration: none;
+      margin: 1rem 0;
       transition: all 0.3s ease;
     }
-    .petition-btn:hover {
+    .action-btn:hover {
       background: #800000;
       transform: scale(1.05);
-    }
-    .petition-embed {
-      width: 100%;
-      height: 500px;
-      border: none;
-      margin: 20px 0;
     }
   </style>
 </head>
@@ -46,22 +44,24 @@
 
   <section id="actions">
     <h2>Take Action</h2>
-    <div class="petition-container">
-      <h3 class="petition-heading">Overturn Joseph's 32.5-Year Sentence</h3>
+    
+    <div class="action-container">
+      <h3 class="action-title">Overturn Joseph's 32.5-Year Sentence</h3>
       <p>Join Christy Poole and thousands demanding justice</p>
-      
-      <!-- PRIMARY BUTTON -->
       <a href="https://www.change.org/p/overturn-joseph-lagerman-s-32-5-year-sentence" 
-         class="petition-btn"
+         class="action-btn"
          target="_blank">
         SIGN THE PETITION →
       </a>
-      
-      <!-- EMBEDDED PETITION -->
-      <iframe src="https://www.change.org/p/overturn-joseph-lagerman-s-32-5-year-sentence/embed" 
-              class="petition-embed"
-              scrolling="no"></iframe>
     </div>
+
+    <!-- Optional Embed (uncomment when ready) -->
+    <!--
+    <div style="margin:2rem 0;">
+      <iframe src="https://www.change.org/p/overturn-joseph-lagerman-s-32-5-year-sentence/embed" 
+              style="width:100%; height:500px; border:none;"></iframe>
+    </div>
+    -->
   </section>
 
 </body>
