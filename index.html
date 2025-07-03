@@ -25,6 +25,40 @@
     }
     form button { background:#001f3f; color:#fff; border:none; cursor:pointer; }
     form button:hover { background:#004080; }
+    /* NEW: Petition Styles */
+    .petition-box {
+      background: #f8f8f8;
+      padding: 25px;
+      border: 2px solid #660000;
+      border-radius: 8px;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .petition-box h3 {
+      color: #660000;
+      margin-top: 0;
+      font-size: 1.8rem;
+    }
+    .petition-btn {
+      background: #660000;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin: 15px 0;
+      transition: all 0.3s ease;
+    }
+    .petition-btn:hover {
+      background: #800000;
+      transform: scale(1.05);
+    }
+    .counter {
+      font-size: 1.1rem;
+      color: #666;
+      margin: 10px 0;
+    }
   </style>
 </head>
 <body>
@@ -36,78 +70,28 @@
 
   <section id="truth">
     <h2>Deep Dive: The Truth They Buried</h2>
+    
+    <div class="petition-box">
+      <h3>DEMAND JUSTICE NOW</h3>
+      <p>Join thousands calling for Joey's sentence to be dropped</p>
+      <a href="https://chng.it/JHFH7rnTCS" class="petition-btn" target="_blank">
+        SIGN THE PETITION →
+      </a>
+      <div class="counter">
+        <iframe src="https://www.change.org/p/JHFH7rnTCS/embed" 
+                width="100%" 
+                height="400" 
+                style="border:none;"></iframe>
+      </div>
+    </div>
+    
     <p>
       Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.
     </p>
-    <p>
-<div style="text-align:center; background:#660000; color:white; padding:10px; margin-bottom:20px;">
-  ⚖️ HEARING DATE: [INSERT DATE] - SIGN BEFORE IT'S TOO LATE
-</div>
-      He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.
-    </p>
-    <p>
-      And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing. The same judge who, with a smirk, decided who the villain was before the facts could even speak.
-    </p>
-    <p>
-      Joseph apologized to the officers who arrested him. But instead of facing them directly, he looked at the judge—a man who had already decided, “I’m not buying what you’re selling.” Meanwhile, the very officers asking for maximum sentencing were seen in a post-arrest photo in Joseph’s living room, smiling with arms around each other, completely uninjured.
-    </p>
-    <p>
-      That photo never made it to court. Neither did the audio evidence where dispatch says, “shots fired—at the ground—suspect in custody,” or the video where Joseph is dragged out of a bathroom, not resisting. His public defenders—overworked, underresourced, and in one case connected to his girlfriend’s prior case—never pushed hard enough.
-    </p>
-    <p>
-      Joseph watched one of those officers on TV later—drinking a beer, watching the Badgers, laughing like the case never happened. The weight that broke Joseph’s life didn’t even dent theirs.
-    </p>
-    <p>
-      But Joey’s not done. And neither are we. Truth doesn’t die in silence—it rises with every voice that dares to speak it.
-    </p>
+    <!-- Rest of your content remains unchanged -->
   </section>
 
-  <section id="actions">
-    <h2>Take Action</h2>
-    <ul>
-      <li><a href="https://www.change.org/JHFH7rnTCS" target="_blank">Sign the Petition</a></li>
-      <li><a href="#truth">Read the Story</a></li>
-      <li><a href="#contact">Send a Letter of Support</a></li>
-    </ul>
-  </section>
+  <!-- Rest of your HTML remains unchanged -->
 
-  <section id="contact">
-    <h2>Contact & Support</h2>
-    <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out:</p>
-    <form name="contact" method="POST" data-netlify="true">
-      <input type="text" name="name" placeholder="Your name" required />
-      <input type="email" name="email" placeholder="Your email" required />
-      <textarea name="message" placeholder="Your message" rows="4" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-
-<blockquote style="border-left: 3px solid #660000; padding-left: 15px; margin: 30px 0;">
-  "This case represents a gross miscarriage of justice. The system failed Joseph Lagerman at every turn."<br>
-  - [Attorney Name], [Organization]
-</blockquote>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Letters for Justice. Built for truth—not profit.</p>
-    <p>Website by Sissy. Domain: <a href="https://justiceforjoey.us">justiceforjoey.us</a></<!-- DELETE these lines -->
-<li><a href="https://www.change.org/JHFH7rnTCS" target="_blank">Sign the Petition</a></li>
-
-<!-- ADD this instead -->
-<li>
-  <div style="background: #f8f8f8; padding: 20px; text-align: center; border: 2px solid #660000; margin: 20px 0;">
-    <h2 style="margin-top:0;color:#660000;">DEMAND JUSTICE NOW</h2>
-    <p>Over 5,000 people are calling for Joey's sentence to be dropped.</p>
-    <a href="https://www.change.org/JHFH7rnTCS" 
-       style="background: #660000; color: white; padding: 12px 25px; font-size: 18px; text-decoration: none; border-radius: 4px; display: inline-block; margin-top: 10px;"
-       target="_blank">
-      SIGN THE PETITION →
-    </a>
-  </div>
-
-<li>
-  <iframe src="https://www.change.org/p/JHFH7rnTCS/embed" 
-          width="100%" 
-          height="400" 
-          style="border:none; margin:20px 0;"></iframe>
-</li>
-
+</body>
+</html>
