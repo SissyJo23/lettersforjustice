@@ -12,20 +12,33 @@
       border: 2px solid #660000;
       margin: 30px 0;
       text-align: center;
+      border-radius: 8px;
     }
     .petition-heading {
       color: #660000;
       margin-top: 0;
+      font-size: 1.8rem;
     }
     .petition-btn {
       background: #660000;
       color: white;
-      padding: 12px 30px;
-      font-size: 1.1rem;
-      border-radius: 4px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      border-radius: 5px;
       display: inline-block;
-      margin-top: 15px;
+      margin: 15px 0;
       text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .petition-btn:hover {
+      background: #800000;
+      transform: scale(1.05);
+    }
+    .petition-embed {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin: 20px 0;
     }
   </style>
 </head>
@@ -34,15 +47,21 @@
   <section id="actions">
     <h2>Take Action</h2>
     <div class="petition-container">
-      <h3 class="petition-heading">Demand Justice for Joey</h3>
-      <p>Join our campaign to overturn this wrongful sentence</p>
-      <a href="https://www.change.org/p/justice-for-joey-lagerman" 
+      <h3 class="petition-heading">Overturn Joseph's 32.5-Year Sentence</h3>
+      <p>Join Christy Poole and thousands demanding justice</p>
+      
+      <!-- PRIMARY BUTTON -->
+      <a href="https://www.change.org/p/overturn-joseph-lagerman-s-32-5-year-sentence" 
          class="petition-btn"
          target="_blank">
-        SIGN THE PETITION
+        SIGN THE PETITION →
       </a>
+      
+      <!-- EMBEDDED PETITION -->
+      <iframe src="https://www.change.org/p/overturn-joseph-lagerman-s-32-5-year-sentence/embed" 
+              class="petition-embed"
+              scrolling="no"></iframe>
     </div>
-    <!-- Rest of your content -->
   </section>
 
 </body>
