@@ -157,19 +157,21 @@
   </section>
 
   <section id="contact">
-    <h2>Contact & Support</h2>
-    <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:</p>
+  <h2>Contact & Support</h2>
+  <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:</p>
 
-    <form action="https://formspree.io/f/mwkgrynl" method="POST" id="contact-form">
-      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
-      <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
-      <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
-      <button type="submit">Send</button>
-    </form>
+  <form action="https://formspree.io/f/mwkgrynl" method="POST">
+    <input type="hidden" name="_next" value="https://justiceforjoey.us/#thanks">
+    <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+    <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
+    <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
+    <button type="submit">Send</button>
+  </form>
 
-    <div id="thank-you-message" style="display: none; margin-top: 1em; font-weight: bold; color: maroon; border: 2px solid maroon; padding: 10px; border-radius: 8px; opacity: 0; transition: opacity 1s ease;">
-      &#10003; Thank you for reaching out. Your message was received.
-    </div>
+  <div id="thanks" style="margin-top: 1em; font-weight: bold; color: maroon;">
+    <!-- This will show after redirect if you want to anchor to it -->
+  </div>
+</section>
   </section>
 
   <footer>
