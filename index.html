@@ -169,11 +169,16 @@
   <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
   <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
   <button type="submit">Send</button>
+<form action="https://formspree.io/f/mwkgrynl" method="POST" id="contact-form">
+  <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+  <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
+  <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
+  <button type="submit">Send</button>
 </form>
 
 <!-- Confirmation Message -->
-<div id="thank-you-message" style="display: none; margin-top: 1em; font-weight: bold; color: maroon;">
-  Thank you for reaching out. Your message was received.
+<div id="thank-you-message" style="display: none; margin-top: 1em; font-weight: bold; color: maroon; border: 2px solid maroon; padding: 10px; border-radius: 8px; opacity: 0; transition: opacity 1s ease;">
+  &#10003; Thank you for reaching out. Your message was received.
 </div>
 
 <script>
@@ -193,6 +198,10 @@
     if (response.ok) {
       form.style.display = "none";
       thankYouMessage.style.display = "block";
+      // Trigger fade-in
+      setTimeout(() => {
+        thankYouMessage.style.opacity = 1;
+      }, 10);
     } else {
       alert("Oops! Something went wrong. Please try again.");
     }
