@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Justice for Joseph Lagerman – uncovering truth, exposing injustice, and fighting for fair sentencing." />
   <title>#JoeysLaw | Letters for Justice</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
     body {
       margin: 0;
@@ -88,25 +89,30 @@
     }
 
     #full-story h2 {
-      color: #660000;
       text-align: center;
-    }
-
-    #full-story-content {
-      max-width: 700px;
-      margin: 2rem auto;
+      color: #660000;
     }
 
     #read-more-btn {
       display: block;
       margin: 1rem auto;
-      background-color: #cc0000;
+      background-color: #001f3f;
       color: white;
-      padding: 0.8rem 1.2rem;
+      padding: 0.75rem 1.25rem;
       font-size: 1rem;
       border: none;
-      border-radius: 6px;
+      border-radius: 5px;
       cursor: pointer;
+    }
+
+    #full-story-content {
+      display: none;
+      animation: fadeIn 0.5s ease-in;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     #petition {
@@ -189,13 +195,12 @@
       }
     }
   </style>
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <h1>#JoeysLaw</h1>
-    <p class="tagline">Letters for Justice | Stand for Fair Sentencing</p>
+    <p class="tagline">The system buries truth. We dig it back up. Join the fight.</p>
     <p class="intro">Join us in seeking justice for Joseph Lagerman — a young man whose sentencing demands a second look. Learn the facts. Read the story. Share your voice.</p>
   </header>
 
@@ -221,10 +226,10 @@
 
   <section id="full-story">
     <h2>The Full Story They Tried to Bury — Joseph’s Words</h2>
-    <button id="read-more-btn" aria-expanded="false" aria-controls="full-story-content">Read Full Story</button>
-    <div id="full-story-content" tabindex="0" aria-hidden="true" style="display: none;">
+    <button id="read-more-btn" aria-expanded="false">Read Full Story</button>
+    <div id="full-story-content" aria-hidden="true">
       <p>The “plea” I took was really just a way for them to get me to cop out and avoid trial—a trial they probably knew they couldn’t win...</p>
-      <p>[Full story continues here – use the full version you pasted earlier.]</p>
+      <p>[INSERT FULL STORY HERE — use your previously approved long version. Too long to fit here in this message box.]</p>
     </div>
   </section>
 
@@ -234,7 +239,7 @@
 
   <section id="contact-form">
     <h3>Send a Message of Support</h3>
-    <form action="https://formsubmit.co/justice4joey@gmail.com" method="POST">
+    <form action="https://formsubmit.co/christy@justiceforjoey.us" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
@@ -245,8 +250,8 @@
   <section id="social-share">
     <p>Share the movement:</p>
     <div class="social-icons">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://josephs-law.space" target="_blank" title="Share on Facebook"><i class="fab fa-facebook-square"></i></a>
-      <a href="https://twitter.com/intent/tweet?text=Support%20%23JoeysLaw%20and%20demand%20fair%20sentencing%20now!%20https://josephs-law.space" target="_blank" title="Share on Twitter"><i class="fab fa-twitter-square"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https://josephs-law.space" target="_blank"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://twitter.com/intent/tweet?text=Support%20%23JoeysLaw%20and%20demand%20fair%20sentencing%20now!%20https://josephs-law.space" target="_blank"><i class="fab fa-twitter-square"></i></a>
       <a href="mailto:?subject=Support%20Joey's%20Law&body=Learn%20more%20about%20this%20case%20and%20how%20to%20help:%20https://josephs-law.space" title="Share by Email"><i class="fas fa-envelope"></i></a>
     </div>
   </section>
@@ -258,6 +263,7 @@
   <script>
     const btn = document.getElementById('read-more-btn');
     const content = document.getElementById('full-story-content');
+
     btn.addEventListener('click', () => {
       const isExpanded = btn.getAttribute('aria-expanded') === 'true';
       btn.setAttribute('aria-expanded', String(!isExpanded));
