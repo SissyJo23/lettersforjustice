@@ -84,38 +84,6 @@
       text-align: center;
       font-size: 0.9rem;
     }
-    .petition-box {
-      background: #f8f8f8;
-      padding: 2rem;
-      border: 3px solid #660000;
-      border-radius: 8px;
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .petition-title {
-      color: #660000;
-      font-size: 2.2rem;
-      margin: 0 0 1rem;
-      line-height: 1.3;
-    }
-    .petition-title strong {
-      font-size: 2.4rem;
-    }
-    .petition-btn {
-      background: #660000;
-      color: white;
-      padding: 1rem 2rem;
-      font-size: 1.2rem;
-      border-radius: 5px;
-      display: inline-block;
-      text-decoration: none;
-      font-weight: bold;
-      transition: all 0.3s ease;
-    }
-    .petition-btn:hover {
-      background: #800000;
-      transform: scale(1.05);
-    }
   </style>
 </head>
 <body>
@@ -129,10 +97,7 @@
     <h2>Deep Dive: The Truth They Buried</h2>
     <p>Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.</p>
     <p>He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.</p>
-    <p>And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing. The same judge who, with a smirk, decided who the villain was before the facts could even speak.</p>
-    <p>Joseph apologized to the officers who arrested him. But instead of facing them directly, he looked at the judge—a man who had already decided, “I’m not buying what you’re selling.” Meanwhile, the very officers asking for maximum sentencing were seen in a post-arrest photo in Joseph’s living room, smiling with arms around each other, completely uninjured.</p>
-    <p>That photo never made it to court. Neither did the audio evidence where dispatch says, “shots fired—at the ground—suspect in custody,” or the video where Joseph is dragged out of a bathroom, not resisting. His public defenders—overworked, underresourced, and in one case connected to his girlfriend’s prior case—never pushed hard enough.</p>
-    <p>Joseph watched one of those officers on TV later—drinking a beer, watching the Badgers, laughing like the case never happened. The weight that broke Joseph’s life didn’t even dent theirs.</p>
+    <p>And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing...</p>
     <p>But Joey’s not done. And neither are we. Truth doesn’t die in silence—it rises with every voice that dares to speak it.</p>
   </section>
 
@@ -157,21 +122,20 @@
   </section>
 
   <section id="contact">
-  <h2>Contact & Support</h2>
-  <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:</p>
+    <h2>Contact & Support</h2>
+    <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:</p>
 
-  <form action="https://formspree.io/f/mwkgrynl" method="POST">
-    <input type="hidden" name="_next" value="https://justiceforjoey.us/#thanks">
-    <label>Your Name:<br><input type="text" name="name" required></label><br><br>
-    <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
-    <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
-    <button type="submit">Send</button>
-  </form>
+    <form action="https://formspree.io/f/mwkgrynl" method="POST" id="contact-form">
+      <input type="hidden" name="_autoresponse" value="Thanks for reaching out about Justice for Joey. Your message was received, and someone will be in touch soon. Truth rises. Justice lives.">
+      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
+      <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
+      <button type="submit">Send</button>
+    </form>
 
-  <div id="thanks" style="margin-top: 1em; font-weight: bold; color: maroon;">
-    <!-- This will show after redirect if you want to anchor to it -->
-  </div>
-</section>
+    <div id="thank-you-message" style="display:none; margin-top: 1em; font-weight: bold; color: maroon;">
+      ✔️ Thank you for reaching out. Your message was received.
+    </div>
   </section>
 
   <footer>
@@ -195,10 +159,6 @@
       if (response.ok) {
         form.style.display = "none";
         thankYouMessage.style.display = "block";
-        // Trigger fade-in
-        setTimeout(() => {
-          thankYouMessage.style.opacity = 1;
-        }, 10);
       } else {
         alert("Oops! Something went wrong. Please try again.");
       }
