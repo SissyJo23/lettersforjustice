@@ -1,4 +1,4 @@
-# lettersforjustice.github.io
+# lettersforjustice.github.io  
 # #JoeysLaw Website
 
 Official campaign site advocating for justice for Joseph Lagerman.
@@ -20,7 +20,7 @@ We’ve configured the custom domain:
 ### GitHub Pages Configuration
 
 1. Ensure a `CNAME` file exists at the repository root containing:
-2. Verify in **Settings > Pages** that the custom domain is set to `josephs-law.space`.
+2. Verify in **Settings > Pages** that the custom domain is set to `josephs-law.space`.  
 3. The site is published from the `main` branch (or your chosen deployment branch).
 
 ---
