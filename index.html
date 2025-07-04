@@ -13,157 +13,256 @@
       color: #333;
       background-color: #fff;
     }
-    header, section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: 0 auto;
-    }
+
     header {
       text-align: center;
-      background: #001f3f;
+      background: linear-gradient(to right, #001f3f, #002b5e);
       color: #fff;
+      padding: 2.5rem 1rem 1rem;
     }
+
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       margin: 0;
+      font-weight: bold;
+      text-transform: uppercase;
     }
+
     .tagline {
       font-size: 1.2rem;
       color: #ffeb3b;
       margin-top: 0.5rem;
     }
-    #truth h2 {
-      color: #660000;
+
+    .intro {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    section, footer {
+      padding: 2rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    #key-facts {
+      background: #f4f4f4;
+      padding: 1.5rem;
       margin-top: 2rem;
+      border-radius: 8px;
+      border-left: 6px solid #660000;
     }
-    #truth p {
-      margin-bottom: 1rem;
+
+    #key-facts h3 {
+      text-align: center;
+      color: #660000;
+      margin-top: 0;
+      font-size: 1.6rem;
     }
-    #actions ul {
-      list-style: none;
-      padding: 0;
-      display: flex;
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
+
+    #key-facts ul {
+      padding-left: 1.5rem;
+      list-style: disc;
     }
-    #actions a {
-      background: #ffeb3b;
-      color: #000;
-      padding: 0.75rem 1.2rem;
-      text-decoration: none;
-      border-radius: 4px;
+
+    #key-facts li {
+      margin-bottom: 0.6rem;
       font-weight: bold;
-      border: 2px solid #000;
     }
-    #share a {
-      text-decoration: none;
-      font-size: 1.2rem;
+
+    /* Additional key facts section styling */
+    .key-facts {
+      background: #f4f4f4;
+      padding: 2rem 1rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 10px;
+      border-left: 8px solid #660000;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    form input, form textarea, form button {
-      display: block;
-      width: 100%;
+
+    .key-facts h2 {
+      text-align: center;
+      color: #660000;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
-      padding: 0.5rem;
+    }
+
+    .key-facts ul {
+      list-style-type: square;
+      padding-left: 1.5rem;
+    }
+
+    .key-facts li {
+      margin-bottom: 0.75rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    /* Sources Section */
+    #sources {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #f9f9f9;
+      border-radius: 8px;
+      border-left: 6px solid #660000;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+
+    #sources h3 {
+      color: #660000;
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.8rem;
+    }
+
+    #sources ul {
+      padding-left: 1.5rem;
+      list-style: disc;
+    }
+
+    #sources li {
+      margin-bottom: 1rem;
       font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      line-height: 1.5;
     }
-    form button {
-      background: #001f3f;
-      color: #fff;
-      border: none;
-      cursor: pointer;
+
+    #sources a {
+      color: #001f3f;
+      text-decoration: none;
     }
-    form button:hover {
-      background: #004080;
+
+    #sources a:hover {
+      text-decoration: underline;
     }
+
+    #sources p {
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 1rem;
+      color: #555;
+    }
+
     footer {
       background: #f4f4f4;
       padding: 1rem;
       text-align: center;
       font-size: 0.9rem;
+      color: #666;
+    }
+
+    footer p {
+      margin: 0.2rem 0;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Justice for Joey</h1>
     <p class="tagline">The system buries truth. We dig it back up. Join the fight.</p>
+    <p class="intro">
+      Joseph Lagerman is serving 32.5 years for a crime that harmed no one. He was never given a fair trial, and the system failed him at every turn. Help us fight for his freedom.
+    </p>
   </header>
 
-  <section id="truth">
-    <h2>Deep Dive: The Truth They Buried</h2>
-    <p>Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.</p>
-    <p>He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.</p>
-    <p>And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing...</p>
-    <p>But Joey’s not done. And neither are we. Truth doesn’t die in silence—it rises with every voice that dares to speak it.</p>
-  </section>
-
-  <section id="actions">
-    <h2>Take Action</h2>
+  <section id="key-facts">
+    <h3>Key Facts</h3>
     <ul>
-      <li><a href="https://chng.it/JHFH7rnTCS" target="_blank">✍️ Sign the Petition</a></li>
-      <li><a href="#truth">📖 Read the Story</a></li>
-      <li><a href="#contact">💌 Send a Letter</a></li>
+      <li>No prior convictions at the time of sentencing</li>
+      <li>No one was injured</li>
+      <li>No civilian witnesses testified</li>
+      <li>Sentenced to nearly the maximum penalty</li>
+      <li>Judge displayed bias and mockery in court</li>
     </ul>
   </section>
 
-  <section id="share">
-    <h2>Share This</h2>
-    <p style="text-align:center;">Spread the word — share Joey’s story:</p>
-    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https://justiceforjoey.us" target="_blank">📘 Facebook</a>
-      <a href="https://twitter.com/intent/tweet?text=Help%20get%20Justice%20for%20Joey!%20Read%20his%20story%20and%20sign%20the%20petition%20https://justiceforjoey.us" target="_blank">🐦 Tweet</a>
-      <a href="https://api.whatsapp.com/send?text=Help%20get%20Justice%20for%20Joey:%20https://justiceforjoey.us" target="_blank">💬 WhatsApp</a>
-      <a href="mailto:?subject=Justice%20for%20Joey&body=Check%20out%20Joey’s%20story:%20https://justiceforjoey.us">📧 Email</a>
-    </div>
+  <section class="key-facts">
+    <h2>Key Facts (Expanded)</h2>
+    <ul>
+      <li><strong>No prior felony convictions</strong> at the time of arrest or sentencing</li>
+      <li><strong>No one was injured</strong> — not even a scratch reported</li>
+      <li><strong>No civilian witnesses testified</strong> in any hearing or trial</li>
+      <li><strong>Sentenced to 32.5 years</strong>, just below the statutory maximum</li>
+      <li><strong>Judge displayed visible bias</strong>, including inappropriate courtroom decor and commentary</li>
+    </ul>
   </section>
 
-<section id="contact" style="max-width: 600px; margin: 2rem auto; padding: 1rem;">
-  <h2 style="color: #660000; text-align: center; margin-bottom: 1rem;">Contact & Support</h2>
-  <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
-    Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:
-  </p>
-  
-  <!-- Jotform Embed -->
-  <div style="border: 2px solid #660000; border-radius: 8px; padding: 1rem;">
-    <script type="text/javascript" src="https://form.jotform.com/jsform/251838414977066"></script>
-  </div>
-</section>
+  <section id="sources">
+    <p>Every claim made on this site is backed by documentation. Below are the key sources that expose how the system failed Joey.</p>
+    <h3>Sources & References</h3>
+    <ul>
+      <li>
+        <strong>Wisconsin Court of Appeals, Case No. 2018CF316 (Joseph Lagerman)</strong> – 
+        Official summary including charges, filings, and case history. This is the foundation of our legal case.
+      </li>
+      <li>
+        <strong>Milwaukee County Circuit Court Records</strong> – 
+        Includes plea hearing transcripts, sentencing statements, and judicial commentary. Crucial for tracking procedural errors.
+      </li>
+      <li>
+        <strong>Wisconsin Innocence Project</strong> – 
+        <a href="https://law.wisc.edu/wip" target="_blank" rel="noopener noreferrer">https://law.wisc.edu/wip</a>
+      </li>
+      <li>
+        <strong>ACLU of Wisconsin</strong> – 
+        <a href="https://aclu-wi.org" target="_blank" rel="noopener noreferrer">https://aclu-wi.org</a>
+      </li>
+      <!-- Add any media coverage or other references here -->
+    </ul>
+    <p>Want to review Joey’s full case file? <a href="#contact">Reach out here</a> and we’ll send you the documents.</p>
+  </section>
 
-    <div id="thank-you-message" style="display:none; margin-top: 1em; font-weight: bold; color: maroon;">
-      ✔️ Thank you for reaching out. Your message was received.
+  <!-- Placeholder for contact section -->
+  <section id="contact">
+    <h2>Contact & Support</h2>
+    <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth-digger? Reach out below:</p>
+
+    <form action="https://formspree.io/f/mwkgrynl" method="POST">
+      <input type="hidden" name="_next" value="https://justiceforjoey.us/#thanks">
+      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
+      <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
+      <button type="submit">Send</button>
+    </form>
+
+    <div id="thanks" style="margin-top: 1em; font-weight: bold; color: maroon; display:none;">
+      Thank you for your message. We will get back to you soon.
     </div>
   </section>
 
   <footer>
     <p>&copy; 2025 Letters for Justice | Justice for Joey</p>
+    <p style="font-size: 0.8rem; margin-top: 0.5rem;">This site is not affiliated with any government agency.</p>
   </footer>
 
   <script>
-    const form = document.getElementById("contact-form");
-    const thankYouMessage = document.getElementById("thank-you-message");
+    // Form submission feedback
+    const form = document.querySelector('form');
+    const thanks = document.getElementById('thanks');
 
-    form.addEventListener("submit", async function (e) {
-      e.preventDefault();
+    form.addEventListener('submit', async function(event) {
+      event.preventDefault();
       const formData = new FormData(form);
-      const response = await fetch(form.action, {
-        method: "POST",
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' }
+        });
+        if (response.ok) {
+          form.style.display = 'none';
+          thanks.style.display = 'block';
+        } else {
+          alert('Oops! Something went wrong. Please try again.');
         }
-      });
-      if (response.ok) {
-        form.style.display = "none";
-        thankYouMessage.style.display = "block";
-      } else {
-        alert("Oops! Something went wrong. Please try again.");
+      } catch (error) {
+        alert('Oops! Something went wrong. Please try again.');
       }
     });
   </script>
-
 </body>
 </html>
