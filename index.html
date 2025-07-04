@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Fight for #JoeysLaw – exposing injustice and fighting for sentencing reform." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Justice for Joseph Lagerman – uncovering truth, exposing injustice, and fighting for fair sentencing." />
   <title>#JoeysLaw | Letters for Justice</title>
   <style>
     body {
@@ -13,27 +13,23 @@
       color: #333;
       background-color: #fff;
     }
-
     header {
       text-align: center;
       background: linear-gradient(to right, #001f3f, #002b5e);
       color: #fff;
       padding: 2.5rem 1rem 1rem;
     }
-
     header h1 {
       font-size: 2.8rem;
       margin: 0;
       font-weight: bold;
       text-transform: uppercase;
     }
-
     .tagline {
       font-size: 1.2rem;
       color: #ffeb3b;
       margin-top: 0.5rem;
     }
-
     .intro {
       font-size: 1.1rem;
       margin-top: 1rem;
@@ -41,13 +37,11 @@
       margin-left: auto;
       margin-right: auto;
     }
-
     section, footer {
       padding: 2rem 1rem;
       max-width: 800px;
       margin: 0 auto;
     }
-
     #key-facts {
       background: #f4f4f4;
       padding: 1.5rem;
@@ -55,104 +49,242 @@
       border-radius: 8px;
       border-left: 6px solid #660000;
     }
-
     #key-facts h3 {
       text-align: center;
       color: #660000;
       margin-top: 0;
       font-size: 1.6rem;
     }
-
     #key-facts ul {
       padding-left: 1.5rem;
       list-style: disc;
     }
-
     #key-facts li {
       margin-bottom: 0.6rem;
       font-weight: bold;
     }
-
-    .deep-dive h2 {
+    #deep-dive h2 {
       color: #660000;
-    }
-
-    .deep-dive p {
+      text-align: center;
       margin-bottom: 1rem;
     }
-
+    #deep-dive p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
     #sources {
       background: #f9f9f9;
-      padding: 1.5rem;
-      margin-top: 2rem;
       border-radius: 8px;
+      padding: 1rem 1.5rem;
+      margin-top: 2rem;
+      border-left: 6px solid #660000;
     }
-
     #sources h3 {
       color: #660000;
       text-align: center;
+      margin-top: 0;
+      margin-bottom: 1rem;
     }
-
     #sources ul {
       padding-left: 1.5rem;
+      list-style: disc;
     }
-
-    footer {
-      background: #f4f4f4;
+    #sources li {
+      margin-bottom: 0.5rem;
+    }
+    #take-action {
       text-align: center;
-      font-size: 0.9rem;
+      margin: 3rem 1rem;
+    }
+    #take-action h2 {
+      color: #660000;
+      margin-bottom: 1rem;
+    }
+    #take-action p {
+      max-width: 600px;
+      margin: 0 auto 1.5rem;
+      font-size: 1.1rem;
+    }
+    #take-action a {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0.5rem;
+      color: #fff;
+    }
+    #take-action a.petition {
+      background-color: #660000;
+    }
+    #take-action a.legislator {
+      background-color: #002b5e;
+    }
+    #media-placeholder {
+      text-align: center;
+      margin: 3rem 1rem;
+      padding: 2rem;
+      border: 2px dashed #660000;
+      border-radius: 8px;
+      color: #660000;
+      font-style: italic;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #social-share {
+      text-align: center;
+      margin: 2rem 0;
+    }
+    #social-share a {
+      display: inline-block;
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      color: #fff;
+    }
+    #social-share a.twitter {
+      background-color: #1da1f2;
+    }
+    #social-share a.facebook {
+      background-color: #3b5998;
+    }
+    #contact-form {
+      max-width: 600px;
+      margin: 3rem auto 4rem;
+      padding: 1.5rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fafafa;
+    }
+    #contact-form h3 {
+      text-align: center;
+      color: #660000;
+      margin-bottom: 1rem;
+    }
+    #contact-form label {
+      display: block;
+      margin-bottom: 0.3rem;
+      font-weight: bold;
+    }
+    #contact-form input,
+    #contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      resize: vertical;
+    }
+    #contact-form button {
+      background-color: #660000;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      width: 100%;
+    }
+    #contact-form button:hover {
+      background-color: #550000;
+    }
+    footer {
+      text-align: center;
       padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>#JoeysLaw</h1>
-    <p class="tagline">The system buries truth. We dig it back up. Join the fight.</p>
-    <p class="intro">
-      Joseph Lagerman is serving 32.5 years for a crime that harmed no one. He never had a trial. Never faced his accusers. And the courtroom mocked him with bobbleheads and bias. We're not asking for favors. We're demanding justice.
-    </p>
-  </header>
+<header>
+  <h1>#JoeysLaw</h1>
+  <p class="tagline">The system buries truth. We dig it back up. Join the fight.</p>
+  <p class="intro">
+    Joseph Lagerman is serving 32.5 years for a crime that harmed no one. He was never given a fair trial, and the system failed him at every turn. Help us fight for his freedom.
+  </p>
+</header>
 
-  <section id="key-facts">
-    <h3>Key Facts</h3>
-    <ul>
-      <li>No prior felony convictions at time of arrest or sentencing</li>
-      <li>No one was injured</li>
-      <li>No civilian witnesses ever testified</li>
-      <li>Sentenced to 32.5 years — just shy of the max</li>
-      <li>Judge displayed personal bias and mockery in court</li>
-    </ul>
-  </section>
+<section id="key-facts">
+  <h3>Key Facts</h3>
+  <ul>
+    <li>No prior felony convictions at the time of arrest or sentencing</li>
+    <li>No one was injured—not even a scratch reported</li>
+    <li>No civilian witnesses testified in any hearing or trial</li>
+    <li>Sentenced to 32.5 years, just below the statutory maximum</li>
+    <li>Judge displayed visible bias, including inappropriate courtroom decor and commentary</li>
+  </ul>
+</section>
 
-  <section class="deep-dive">
-    <h2>Deep Dive: The Truth They Buried</h2>
-    <p>Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.</p>
-    <p>He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.</p>
-    <p>In the courtroom—where justice should live—Joseph stood before a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing. The same judge who smirked and said, “I’m not buying what you’re selling.”</p>
-    <p>Joseph apologized to the officers who arrested him. He was not resisting. He was crying. He was done. The dispatch audio confirms it: “Shots fired... at the ground... suspect in custody.” A video shows him being pulled from a bathroom, not fighting, not armed. But none of that mattered in court.</p>
-    <p>The officers who asked for a maximum sentence later posed smiling in Joseph’s living room for a post-arrest photo — arms around each other, standing proudly, untouched. That photo was never shown in court. Neither was the video. Neither was the truth.</p>
-    <p>Joseph’s story isn’t rare. But it is buried. We’re digging it back up — and you're holding the shovel.</p>
-  </section>
+<section id="deep-dive">
+  <h2>The Story They Tried to Bury</h2>
+  <p>Joseph Lagerman never got a trial. Not one civilian witness ever showed up. No opportunity to cross-examine. No second chances. The only thing the system gave him was time—32.5 years of it.</p>
+  <p>He was sentenced not just for what happened that day, but for everything the state could dig up and lump in. There were no other open cases. No violent record. But you wouldn’t know that by the way they came down on him.</p>
+  <p>And in the courtroom—where justice should live—Joseph stood in front of a judge who never looked him in the eyes. The same judge who displayed bobbleheads of Yoda and Darth Vader during sentencing...</p>
+  <p>But Joey’s not done. And neither are we. Truth doesn’t die in silence—it rises with every voice that dares to speak it.</p>
+</section>
 
-  <section id="sources">
-    <h3>Sources & References</h3>
-    <ul>
-      <li><strong>Wisconsin Court of Appeals, Case No. 2018CF316 (Joseph Lagerman)</strong> – Official case summary and documents.</li>
-      <li><strong>Milwaukee County Circuit Court Records</strong> – Charging documents, transcripts, and sentencing orders.</li>
-      <li><strong>Wisconsin Innocence Project</strong> – <a href="https://law.wisc.edu/wip" target="_blank">https://law.wisc.edu/wip</a></li>
-      <li><strong>ACLU of Wisconsin</strong> – <a href="https://aclu-wi.org" target="_blank">https://aclu-wi.org</a></li>
-    </ul>
-    <p style="font-size: 0.9rem; text-align: center; margin-top: 1rem;">
-      For full case documents or additional information, please contact us.
-    </p>
-  </section>
+<section id="sources">
+  <h3>Sources & References</h3>
+  <ul>
+    <li><strong>Wisconsin Court of Appeals, Case No. 2018CF316 (Joseph Lagerman)</strong> – Official case summary and documents.</li>
+    <li><strong>Milwaukee County Circuit Court Records</strong> – Charging documents, transcripts, and sentencing orders.</li>
+    <li><strong>Wisconsin Innocence Project</strong> – <a href="https://law.wisc.edu/wip" target="_blank">https://law.wisc.edu/wip</a></li>
+    <li><strong>ACLU of Wisconsin</strong> – <a href="https://aclu-wi.org" target="_blank">https://aclu-wi.org</a></li>
+  </ul>
+  <p style="font-size: 0.9rem; text-align: center; margin-top: 1rem;">
+    For full case documents or additional information, please contact us.
+  </p>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Letters for Justice | #JoeysLaw</p>
-    <p style="font-size: 0.8rem; margin-top: 0.5rem;">This site is not affiliated with any government agency.</p>
-  </footer>
+<section id="take-action">
+  <h2>Take Action for #JoeysLaw</h2>
+  <p>
+    Justice for Joseph Lagerman starts with you. Join thousands demanding fairness and transparency in sentencing. Here’s how you can help:
+  </p>
+  <a href="https://www.change.org/p/justice-for-joseph-lagerman" target="_blank" class="petition">Sign the Petition</a>
+  <a href="mailto:youradvocacygroup@example.com?subject=Support for JoeysLaw" class="legislator">Contact Your Legislator</a>
+  <p style="margin-top: 1rem; font-size: 0.9rem; color: #555;">
+    Share your support on social media with <strong>#JoeysLaw</strong> to raise awareness.
+  </p>
+</section>
+
+<section id="media-placeholder">
+  <p>Media content coming soon. Stay tuned for videos and images that tell Joey’s story.</p>
+</section>
+
+<section id="social-share">
+  <a href="https://twitter.com/intent/tweet?text=Justice+delayed+is+justice+denied.+Joseph+Lagerman+faces+32.5+years+without+a+fair+trial.+No+witnesses,+no+injuries,+just+bias.+Join+the+fight+for+%23JoeysLaw" target="_blank" class="twitter">Share on Twitter</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjoeyslaw.us" target="_blank" class="facebook">Share on Facebook</a>
+</section>
+
+<section id="contact-form">
+  <h3>Contact Us</h3>
+  <form action="https://formspree.io/f/your-form-id" method="POST" target="_top">
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required placeholder="you@example.com" />
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Letters for Justice | #JoeysLaw</p>
+  <p style="font-size: 0.8rem; margin-top: 0.5rem;">This site is not affiliated with any government agency.</p>
+</footer>
 
 </body>
 </html>
