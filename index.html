@@ -160,50 +160,48 @@
     <h2>Contact & Support</h2>
     <p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:</p>
 
-    <a href="mailto:christy@justiceforjoey.us?subject=Justice%20for%20Joey%20Support&body=Hi%20Christy%2C%0A%0AI’m%20interested%20in%20supporting%20Joey’s%20case.%20Here’s%20how%20I%20can%20help%3A%0A%0A—%20Your%20Name"
-       style="display:inline-block; background:#001f3f; color:#fff; padding:0.75rem 1.2rem; text-decoration:none; border-radius:5px; font-weight:bold; margin-bottom:1.5rem;">
-     <h2>Contact & Support</h2>
-<p>Want to get involved? Are you a legal advocate, journalist, or fellow truth‑digger? Reach out below:</p>
-<form action="https://formspree.io/f/mwkgrynl" method="POST" id="contact-form">
-  <label>Your Name:<br><input type="text" name="name" required></label><br><br>
-  <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
-  <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
-  <button type="submit">Send</button>
-<form action="https://formspree.io/f/mwkgrynl" method="POST" id="contact-form">
-  <label>Your Name:<br><input type="text" name="name" required></label><br><br>
-  <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
-  <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
-  <button type="submit">Send</button>
-</form>
+    <form action="https://formspree.io/f/mwkgrynl" method="POST" id="contact-form">
+      <label>Your Name:<br><input type="text" name="name" required></label><br><br>
+      <label>Your Email:<br><input type="email" name="_replyto" required></label><br><br>
+      <label>Your Message:<br><textarea name="message" required></textarea></label><br><br>
+      <button type="submit">Send</button>
+    </form>
 
-<!-- Confirmation Message -->
-<div id="thank-you-message" style="display: none; margin-top: 1em; font-weight: bold; color: maroon; border: 2px solid maroon; padding: 10px; border-radius: 8px; opacity: 0; transition: opacity 1s ease;">
-  &#10003; Thank you for reaching out. Your message was received.
-</div>
+    <div id="thank-you-message" style="display: none; margin-top: 1em; font-weight: bold; color: maroon; border: 2px solid maroon; padding: 10px; border-radius: 8px; opacity: 0; transition: opacity 1s ease;">
+      &#10003; Thank you for reaching out. Your message was received.
+    </div>
+  </section>
 
-<script>
-  const form = document.getElementById("contact-form");
-  const thankYouMessage = document.getElementById("thank-you-message");
+  <footer>
+    <p>&copy; 2025 Letters for Justice | Justice for Joey</p>
+  </footer>
 
-  form.addEventListener("submit", async function (e) {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const response = await fetch(form.action, {
-      method: "POST",
-      body: formData,
-      headers: {
-        'Accept': 'application/json'
+  <script>
+    const form = document.getElementById("contact-form");
+    const thankYouMessage = document.getElementById("thank-you-message");
+
+    form.addEventListener("submit", async function (e) {
+      e.preventDefault();
+      const formData = new FormData(form);
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      if (response.ok) {
+        form.style.display = "none";
+        thankYouMessage.style.display = "block";
+        // Trigger fade-in
+        setTimeout(() => {
+          thankYouMessage.style.opacity = 1;
+        }, 10);
+      } else {
+        alert("Oops! Something went wrong. Please try again.");
       }
     });
-    if (response.ok) {
-      form.style.display = "none";
-      thankYouMessage.style.display = "block";
-      // Trigger fade-in
-      setTimeout(() => {
-        thankYouMessage.style.opacity = 1;
-      }, 10);
-    } else {
-      alert("Oops! Something went wrong. Please try again.");
-    }
-  });
-</script>
+  </script>
+
+</body>
+</html>
