@@ -75,13 +75,37 @@
       margin-left: auto;
       margin-right: auto;
     }
-    <section id="why-matters" style="background: #f4f4f4; padding: 1.5rem; margin-top: 2rem; border-radius: 8px; border-left: 6px solid #001f3f;">
-  <h3 style="text-align: center; color: #001f3f;">Why This Matters</h3>
-  <p style="max-width: 700px; margin: 0 auto;">
-    Joseph’s case is not an isolated incident. Across the country, people—especially those without resources—face harsh sentences, biased judges, and plea deals that punish rather than rehabilitate. By standing with Joseph, you’re standing for fairness, transparency, and the belief that everyone deserves a second chance.
-  </p>
-</section>
-
+    #why-matters {
+      background: #f4f4f4;
+      padding: 1.5rem;
+      margin-top: 2rem;
+      border-radius: 8px;
+      border-left: 6px solid #001f3f;
+    }
+    #why-matters h3 {
+      text-align: center;
+      color: #001f3f;
+    }
+    #why-matters p {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    #how-help {
+      text-align: center;
+      margin: 2rem auto;
+      max-width: 800px;
+    }
+    #how-help h3 {
+      color: #002b5e;
+    }
+    #how-help ul {
+      list-style: none;
+      padding: 0;
+      margin: 1rem 0;
+    }
+    #how-help li {
+      margin-bottom: 0.8rem;
+    }
     #full-story {
       margin-top: 2rem;
     }
@@ -118,16 +142,6 @@
       text-decoration: none;
       display: inline-block;
     }
-    <section id="how-help" style="text-align: center; margin: 2rem auto; max-width: 800px;">
-  <h3 style="color: #002b5e;">How You Can Help</h3>
-  <ul style="list-style: none; padding: 0; margin: 1rem 0;">
-    <li style="margin-bottom: 0.8rem;">📝 <strong>Sign the petition</strong> to demand justice</li>
-    <li style="margin-bottom: 0.8rem;">✉️ <strong>Contact your legislators</strong> and share Joseph’s story</li>
-    <li style="margin-bottom: 0.8rem;">📢 <strong>Share on social media</strong> with #JoeysLaw</li>
-    <li style="margin-bottom: 0.8rem;">💌 <strong>Send a message of support</strong> using the form below</li>
-  </ul>
-</section>
-
     #contact-form {
       background: #f9f9f9;
       padding: 1.5rem;
@@ -186,7 +200,6 @@
   </style>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <header>
     <h1>#JoeysLaw</h1>
@@ -209,48 +222,50 @@
     <p>Joseph Lagerman was sentenced to an unusually long term under circumstances that have raised serious legal and ethical questions. Advocacy groups, family, and legal experts have called for a re-examination of the trial and sentencing.</p>
     <p>His case reflects broader issues within the justice system — where sentencing disparities, prosecutorial discretion, and socioeconomic background may unjustly influence outcomes.</p>
   </section>
-<!-- ✂️ HEAD AND STYLES REMAIN UNCHANGED ABOVE THIS POINT -->
 
-<section id="full-story">
-  <h2>The Full Story They Tried to Bury — Joseph’s Words</h2>
-  <button class="story-toggle" onclick="toggleStory()">Read Full Story</button>
-  <div class="story-content" id="storyContent">
-    <p>The “plea” I took was really just a way for them to get me to cop out and avoid trial—a trial they probably knew they couldn’t win. They amended my original first-degree intentional attempted homicide charge (daunting, but shaky) into two counts of first-degree reckless endangerment. One count was already tacked on, plus a deadly weapon modifier. The exposure (their sales pitch) was supposedly cut in half if I accepted the plea.</p>
+  <section id="why-matters">
+    <h3>Why This Matters</h3>
+    <p>Joseph’s case is not an isolated incident. Across the country, people—especially those without resources—face harsh sentences, biased judges, and plea deals that punish rather than rehabilitate. By standing with Joseph, you’re standing for fairness, transparency, and the belief that everyone deserves a second chance.</p>
+  </section>
 
-    <p>They made sure I “knowingly, voluntarily, and intelligently” took the plea by going through the standard questionnaire in court, but I was a little misled by my public defender. Honestly, I was ill-informed. They gave me two and a half years under the maximum, so legally not excessive—but that doesn’t mean it was fair.</p>
-
-    <p>McGuire, the prosecutor for the state? Didn’t ring a bell. The real DA on my felony case was Denis John Stingl, who made an unofficial offer of “five in, five out.” When I asked my lawyer to get it in writing, he said the DA had mixed up the cases, so no deal.</p>
-
-    <p>The plea was presented to me as-is by my attorney and in court with an initialed questionnaire clarified on record. I wasn’t at any off-the-record meetings and didn’t hear about any, except for one mishap. All I have are transcripts, police reports, and official stuff.</p>
-
-    <p>I’m not innocent, though. Not in the saintly sense. I messed up. But this fight isn’t about perfection—it’s about fairness. I needed a wake-up call, and this system gave me one in the worst way possible.</p>
-
-    <h3>What Happened That Day</h3>
-    <p>January 18, 2018: I was arguing with my then-girlfriend, Mekayla Terrell. We were living in a motel room. I was high, stressed, and spiraling. I pointed a gun at myself and told her I’d shoot. I didn't threaten her, I didn’t chase her, and I didn’t shoot <em>at</em> anyone. But the gun did go off—into the floor—when I slammed it down. That’s the truth. She ran. I left. No one was hurt.</p>
-
-    <p>I hid the gun because I panicked. I didn’t want her or her dad finding it. I didn’t leave it to threaten anyone. When the police came, I cooperated. I never ran, never fought, never tried to use the gun on them. The DA built their case on fear and assumptions—none of it backed by actual evidence.</p>
-
-    <h3>The Courtroom and Sentencing</h3>
-    <p>The judge who sentenced me treated me like a monster. Like every mistake I’d ever made was part of this one case. Here’s what they didn’t care about:</p>
+  <section id="how-help">
+    <h3>How You Can Help</h3>
     <ul>
-      <li>No one testified. No victim showed up in court.</li>
-      <li>They used unrelated accusations from my past to paint me as violent.</li>
-      <li>The gun wasn’t fired at anyone. The only shot was into the floor.</li>
-      <li>No physical injuries. No physical threats to law enforcement.</li>
-      <li>I had no prior violent felonies—just one misdemeanor from years ago.</li>
+      <li>📝 <strong>Sign the petition</strong> to demand justice</li>
+      <li>✉️ <strong>Contact your legislators</strong> and share Joseph’s story</li>
+      <li>📢 <strong>Share on social media</strong> with #JoeysLaw</li>
+      <li>💌 <strong>Send a message of support</strong> using the form below</li>
     </ul>
+  </section>
 
-    <p>They sentenced me as if I’d shot someone. But they knew they couldn’t prove that. That’s why they dropped the most serious charge and gave me this Frankenstein-plea instead.</p>
-
-    <h3>Joseph’s Takeaway</h3>
-    <p>This wasn’t just about one night or one mistake. It was about power. They wanted to win—wanted a conviction. They made me choose between risking 60 years at trial or taking their twisted deal. So I took it. Not because I was guilty of what they said—because I was scared. I had no support. My lawyer didn’t fight for me. And once I signed, the truth didn’t matter anymore.</p>
-
-    <p>I’m not asking anyone to pretend I’m perfect. But I’m asking you to look at the facts. The truth matters. My sentence doesn’t match the evidence—or the law. And if this can happen to me, it can happen to anyone.</p>
-
-    <p>But I’m still here. Still fighting. Scars and all.</p>
-  </div>
-</section>
-
+  <section id="full-story">
+    <h2>The Full Story They Tried to Bury — Joseph’s Words</h2>
+    <button class="story-toggle" onclick="toggleStory()">Read Full Story</button>
+    <div class="story-content" id="storyContent">
+      <p>The “plea” I took was really just a way for them to get me to cop out and avoid trial—a trial they probably knew they couldn’t win. They amended my original first-degree intentional attempted homicide charge (daunting, but shaky) into two counts of first-degree reckless endangerment. One count was already tacked on, plus a deadly weapon modifier. The exposure (their sales pitch) was supposedly cut in half if I accepted the plea.</p>
+      <p>They made sure I “knowingly, voluntarily, and intelligently” took the plea by going through the standard questionnaire in court, but I was a little misled by my public defender. Honestly, I was ill-informed. They gave me two and a half years under the maximum, so legally not excessive—but that doesn’t mean it was fair.</p>
+      <p>McGuire, the prosecutor for the state? Didn’t ring a bell. The real DA on my felony case was Denis John Stingl, who made an unofficial offer of “five in, five out.” When I asked my lawyer to get it in writing, he said the DA had mixed up the cases, so no deal.</p>
+      <p>The plea was presented to me as-is by my attorney and in court with an initialed questionnaire clarified on record. I wasn’t at any off-the-record meetings and didn’t hear about any, except for one mishap. All I have are transcripts, police reports, and official stuff.</p>
+      <p>I’m not innocent, though. Not in the saintly sense. I messed up. But this fight isn’t about perfection—it’s about fairness. I needed a wake-up call, and this system gave me one in the worst way possible.</p>
+      <h3>What Happened That Day</h3>
+      <p>January 18, 2018: I was arguing with my then-girlfriend, Mekayla Terrell. We were living in a motel room. I was high, stressed, and spiraling. I pointed a gun at myself and told her I’d shoot. I didn't threaten her, I didn’t chase her, and I didn’t shoot <em>at</em> anyone. But the gun did go off—into the floor—when I slammed it down. That’s the truth. She ran. I left. No one was hurt.</p>
+      <p>I hid the gun because I panicked. I didn’t want her or her dad finding it. I didn’t leave it to threaten anyone. When the police came, I cooperated. I never ran, never fought, never tried to use the gun on them. The DA built their case on fear and assumptions—none of it backed by actual evidence.</p>
+      <h3>The Courtroom and Sentencing</h3>
+      <p>The judge who sentenced me treated me like a monster. Like every mistake I’d ever made was part of this one case. Here’s what they didn’t care about:</p>
+      <ul>
+        <li>No one testified. No victim showed up in court.</li>
+        <li>They used unrelated accusations from my past to paint me as violent.</li>
+        <li>The gun wasn’t fired at anyone. The only shot was into the floor.</li>
+        <li>No physical injuries. No physical threats to law enforcement.</li>
+        <li>I had no prior violent felonies—just one misdemeanor from years ago.</li>
+      </ul>
+      <p>They sentenced me as if I’d shot someone. But they knew they couldn’t prove that. That’s why they dropped the most serious charge and gave me this Frankenstein-plea instead.</p>
+      <h3>Joseph’s Takeaway</h3>
+      <p>This wasn’t just about one night or one mistake. It was about power. They wanted to win—wanted a conviction. They made me choose between risking 60 years at trial or taking their twisted deal. So I took it. Not because I was guilty of what they said—because I was scared. I had no support. My lawyer didn’t fight for me. And once I signed, the truth didn’t matter anymore.</p>
+      <p>I’m not asking anyone to pretend I’m perfect. But I’m asking you to look at the facts. The truth matters. My sentence doesn’t match the evidence—or the law. And if this can happen to me, it can happen to anyone.</p>
+      <p>But I’m still here. Still fighting. Scars and all.</p>
+    </div>
+  </section>
 
   <section id="petition">
     <a href="https://chng.it/JHFH7rnTCS" target="_blank" class="petition-button">Sign the Petition</a>
