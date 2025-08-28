@@ -45,33 +45,50 @@
       text-decoration: none;
     }
 
+    .story {
+      display: none;
+      margin-top: 15px;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+
+    .story-toggle {
+      background-color: #dc3545;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+
     footer {
       background-color: #343a40;
       color: #fff;
       text-align: center;
       padding: 10px;
       font-size: 0.9em;
+      margin-top: 20px;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Justice for Joseph Lagerman</h1>
+    <h1>#JoeysLaw</h1>
     <p>NO INTENT TO HARM • NO INJURIES • NO JUSTICE</p>
   </header>
 
   <section>
-    <h1>#JoeysLaw: Advocates Demand Justice for Joseph Lagerman</h1>
+    <h1>Justice for Joseph Lagerman</h1>
     <p>A new advocacy campaign, <strong>#JoeysLaw</strong>, has launched to spotlight the case of Joseph Lagerman, who is
       currently serving a <strong>32.5-year sentence</strong> in Wisconsin for charges stemming from an incident in 2018.
-      Supporters, led by Christy, who has been corresponding and building a legal advocacy network on Joseph's behalf,
-      aim to bring public attention to what they argue are serious judicial oversights and sentencing disparities.</p>
-
-    <p>According to the campaign, key issues in Joseph's case include <strong>misrepresented plea agreements</strong>, the
-      <strong>absence of critical witness testimony</strong>, and <strong>combined charges</strong> that led to a sentence
-      far exceeding what some say is proportionate. <strong>#JoeysLaw</strong> highlights these alleged injustices,
-      presenting detailed case documentation and personal narratives from Joseph and Christy.</p>
+      Supporters, led by Christy, aim to bring public attention to what they argue are serious judicial oversights and
+      sentencing disparities.</p>
 
     <blockquote>
       "Joseph's story is more than a legal case — it's about truth, fairness, and human dignity," said Christy. "Through
@@ -97,19 +114,52 @@
 
     <h2>Take Action</h2>
     <ul>
-      <li><a href="https://justiceforjoey.us/lagerman.html">Download the Full Case Brief</a></li>
-      <li><a href="https://chng.it/JHFH7rnTCS">Sign the Change.org Petition</a></li>
+      <li><a href="https://chng.it/JHFH7rnTCS" target="_blank">Sign the Change.org Petition</a></li>
       <li><a href="mailto:legal@justiceforjoseph.org">Contact legal advocates</a></li>
+      <li><a href="https://justiceforjoey.us/lagerman.html">Download the Full Case Brief</a></li>
     </ul>
 
-    <h2>Media Contact</h2>
-    <p><strong>Email:</strong> legal@justiceforjoseph.org</p>
-    <p><strong>Website:</strong> <a href="https://lettersforjustice.github.io">lettersforjustice.github.io</a></p>
+    <h2>Read Joseph’s Story</h2>
+    <button class="story-toggle" onclick="toggleStory()">Read Full Story</button>
+    <div class="story" id="joeyStory">
+      <p>The ‘plea’ I took was really just me being pressured into something I didn’t understand. My lawyer told me it was my only option, but I didn’t know they could stack charges and enhancements the way they did. I thought I was agreeing to one thing, but I got sentenced as if I had confessed to everything in the book. I never had the chance to tell my side, not fully, not truthfully, not the way it should have been told in court.</p>
+
+      <p>That day in 2018, I was in a full-blown panic attack. I wasn’t in my right mind. I had been using, I was spiraling, and everything was closing in on me. When the gun went off, it wasn’t aimed at anyone. The ballistics show it. It was down, into the ground, not at a person. There were no injuries. No intent to harm. But the courtroom painted me like I had hunted people down. That’s not what happened.</p>
+
+      <p>I panicked and didn’t care what happened to me at that point. That’s the truth. I was in such a state of fear and chaos in my head that I couldn’t think straight. If you’ve never had your own mind turn into a trap, you can’t know what it’s like. They never let the jury or the judge hear about my mental health. They never let the truth breathe.</p>
+
+      <p>Witnesses who could have spoken on my behalf never even showed up. The charges got combined with the only other case I had, and suddenly it was like my entire life, every mistake, every shadow, got shoved into one trial. They sentenced me like I was some career criminal with a rap sheet longer than I am tall. But before that, I didn’t even have a record.</p>
+
+      <p>Thirty-two and a half years. For something where no one was hurt. For something where I never intended to hurt anyone. For something that, in similar cases, averages 5 to 7 years. That’s what justice looks like in Wisconsin, apparently.</p>
+
+      <p>I sit here now, years later, still stunned by how it all went down. I think about that courtroom — how quick it was, how much wasn’t said, how much was buried. I think about how my own words got twisted, how my so-called plea wasn’t a plea at all but a trap I walked into blind. I think about how my lawyer smiled at the judge while I stood there, my life being handed away in decades.</p>
+
+      <p>And I wonder: how many others are there like me? How many stories got buried because the system doesn’t have time for truth? Because deals are easier than trials, because stacking charges makes for a bigger sentence and a better headline? They bury us in silence and call it justice.</p>
+
+      <p>But I won’t stay buried. My voice, my truth, it’s still here. I may be behind these walls, but my words can still reach beyond them. That’s what #JoeysLaw is about. Digging up what they tried to bury. Shining a light where they wanted shadows. Saying, loudly, that justice without truth isn’t justice at all.</p>
+
+      <p>I’m Joseph Lagerman. I’m still here. Still fighting. Scars and all.</p>
+    </div>
+
+    <h2>Contact Us</h2>
+    <iframe src="https://form.jotform.com/sunflowergurl55/contact-us" width="100%" height="500"
+      style="border:none;"></iframe>
   </section>
 
   <footer>
     &copy; 2025 Justice for Joseph. All rights reserved.
   </footer>
+
+  <script>
+    function toggleStory() {
+      var story = document.getElementById("joeyStory");
+      if (story.style.display === "none" || story.style.display === "") {
+        story.style.display = "block";
+      } else {
+        story.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
