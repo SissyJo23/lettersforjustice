@@ -86,15 +86,18 @@
       text-align: center;
       margin-top: 2rem;
     }
+    .social-share p { margin-bottom: .5rem; font-weight: bold; }
     .social-share a {
       margin: 0 .5rem;
       font-size: 1.8rem;
-      color: #274472;
       text-decoration: none;
+      transition: 0.2s;
     }
-    .social-share a:hover {
-      color: #FFD300;
-    }
+    .social-share a .fa-facebook { color: #1877F2; }
+    .social-share a .fa-x-twitter { color: #1DA1F2; }
+    .social-share a .fa-square-instagram { color: #E4405F; }
+    .social-share a .fa-envelope { color: #800020; }
+    .social-share a:hover i { color: #FFD300; }
 
     /* Contact Form Embed */
     iframe {
@@ -171,10 +174,10 @@ Still fighting. Scars and all.
     </a>
     <div class="social-share">
       <p>Share #JoeysLaw:</p>
-      <a href="https://twitter.com/intent/tweet?text=Stand%20up%20for%20justice!%20Read%20Joey%27s%20story%20%23JoeysLaw%20https%3A%2F%2Fjusticeforjoey.us" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjusticeforjoey.us" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="mailto:?subject=Justice%20for%20Joey&body=Read%20about%20Joey%27s%20case%20and%20sign%20the%20petition%20here:%20https%3A%2F%2Fjusticeforjoey.us"><i class="fas fa-envelope"></i></a>
-      <a href="#" onclick="copyLink()"><i class="fas fa-link"></i></a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fjusticeforjoey.us" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://twitter.com/intent/tweet?text=Stand%20up%20for%20justice!%20Read%20Joey%27s%20story%20%23JoeysLaw%20https%3A%2F%2Fjusticeforjoey.us" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="mailto:?subject=Justice%20for%20Joey&body=Read%20about%20Joey%27s%20case%20and%20sign%20the%20petition%20here:%20https%3A%2F%2Fjusticeforjoey.us"><i class="fa-solid fa-envelope"></i></a>
     </div>
   </section>
 
