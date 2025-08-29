@@ -195,7 +195,11 @@ Still fighting. Scars and all.
   <script>
     function toggleStory() {
       const content = document.getElementById("storyContent");
-      content.style.display = content.style.display === "block" ? "none" : "block";
+      if (content.style.display === "none" || content.style.display === "") {
+        content.style.display = "block";
+      } else {
+        content.style.display = "none";
+      }
     }
 
     function scrollToTop() {
