@@ -6,149 +6,29 @@
   <title>#JoeysLaw</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    body {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      line-height: 1.6;
-      background: #fdfdfd;
-      color: #111;
-    }
-    header {
-      background: #0b1d51; /* navy blue */
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      border-bottom: 5px solid #ffc107; /* gold */
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.3rem;
-      color: #ffc107;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      color: #b71c1c; /* dark red */
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    ul {
-      list-style: disc;
-      margin-left: 2rem;
-    }
-    .petition, .contact, .press-kit {
-      text-align: center;
-      margin: 2rem auto;
-    }
-    .petition a, .press-kit a {
-      display: inline-block;
-      margin: 0.5rem;
-      padding: 0.85rem 1.5rem;
-      background: #111;
-      color: #ffc107;
-      text-decoration: none;
-      border-radius: 5px;
-      font-weight: bold;
-      font-size: 1rem;
-      transition: all 0.3s ease;
-    }
-    .petition a:hover, .press-kit a:hover {
-      background: #ffc107;
-      color: #111;
-    }
-    footer {
-      background: #0b1d51;
-      color: #fff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
-    .share-buttons {
-      text-align: center;
-      margin: 2rem 0;
-    }
-    .share-buttons a {
-      margin: 0 15px;
-      color: #0b1d51;
-      font-size: 1.5rem;
-      text-decoration: none;
-    }
-    .share-buttons a:hover {
-      color: #ffc107;
-    }
-    .share-buttons span {
-      display: block;
-      font-size: 0.9rem;
-      color: #333;
-    }
-    iframe {
-      width: 100%;
-      height: 500px;
-      border: none;
-      margin-top: 1rem;
-    }
-
-    /* Floating petition button */
-    .floating-petition {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 1000;
-      background: rgba(17,17,17,0.85); /* semi-transparent black */
-      color: #ffc107;
-      padding: 1rem 1.5rem;
-      border-radius: 50px;
-      font-weight: bold;
-      font-size: 1rem;
-      text-decoration: none;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: all 0.3s ease;
-    }
-    .floating-petition:hover {
-      background: #ffc107;
-      color: #111;
-    }
-
-    /* MOBILE OPTIMIZATION */
-    @media screen and (max-width: 600px) {
-      section {
-        padding: 1rem;
-      }
-      ul {
-        margin-left: 1rem;
-      }
-      .petition a, .press-kit a {
-        padding: 1rem 1.5rem;
-      }
-      .share-buttons a {
-        margin: 0 10px;
-        font-size: 2rem;
-      }
-      iframe {
-        height: 700px;
-      }
-      .floating-petition {
-        bottom: 15px;
-        right: 15px;
-        padding: 0.85rem 1.25rem;
-        font-size: 0.9rem;
-      }
-    }
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin:0; padding:0; line-height:1.6; background:#fdfdfd; color:#111; }
+    header { background:#0b1d51; color:#fff; text-align:center; padding:2rem 1rem; border-bottom:5px solid #ffc107; }
+    header h1 { margin:0; font-size:3rem; }
+    header p { margin:0.5rem 0 0; font-size:1.3rem; color:#ffc107; font-weight:bold; }
+    section { padding:2rem; max-width:900px; margin:auto; }
+    h2 { color:#b71c1c; text-align:center; margin-bottom:1rem; }
+    ul { list-style:disc; margin-left:2rem; }
+    .petition, .contact, .press-kit { text-align:center; margin:2rem auto; }
+    .petition a, .press-kit a { display:inline-block; margin:0.5rem; padding:0.85rem 1.5rem; background:#111; color:#ffc107; text-decoration:none; border-radius:5px; font-weight:bold; font-size:1rem; transition:all 0.3s ease; }
+    .petition a:hover, .press-kit a:hover { background:#ffc107; color:#111; }
+    footer { background:#0b1d51; color:#fff; text-align:center; padding:1rem; margin-top:2rem; }
+    .share-buttons { text-align:center; margin:2rem 0; }
+    .share-buttons a { margin:0 15px; color:#0b1d51; font-size:1.5rem; text-decoration:none; }
+    .share-buttons a:hover { color:#ffc107; }
+    .share-buttons span { display:block; font-size:0.9rem; color:#333; }
+    iframe { width:100%; height:500px; border:none; }
+    .floating-petition { position:fixed; bottom:20px; right:20px; z-index:1000; background:rgba(17,17,17,0.85); color:#ffc107; padding:1rem 1.5rem; border-radius:50px; font-weight:bold; font-size:1rem; text-decoration:none; box-shadow:0 4px 8px rgba(0,0,0,0.3); transition:all 0.3s ease; }
+    .floating-petition:hover { background:#ffc107; color:#111; }
+    @media screen and (max-width:600px) { section { padding:1rem; } ul { margin-left:1rem; } .petition a, .press-kit a { padding:1rem 1.5rem; } .share-buttons a { margin:0 10px; font-size:2rem; } iframe { height:700px; } .floating-petition { bottom:15px; right:15px; padding:0.85rem 1.25rem; font-size:0.9rem; } }
   </style>
 
   <!-- Fathom Analytics -->
   <script src="https://cdn.usefathom.com/script.js" data-site="HDZSLAUS" defer></script>
-  <!-- End Fathom -->
-
 </head>
 <body>
   <header>
@@ -176,31 +56,26 @@
   <section>
     <h2>The Story They Tried to Bury</h2>
     <p>Joseph Lagerman’s legal record is often misrepresented. In 2017, he was arrested after a gas station altercation. No weapon was involved, and no shots were fired. Two months later, during a domestic violence call to his home, Joseph discharged a firearm once into the floor. No one was injured.</p>
-
     <p>Despite the limited scope of the incident, Joseph received a 32.5-year sentence. His appeal, decided by the Wisconsin Court of Appeals in 2020 via a no-merit report, affirmed the conviction without addressing concerns about sentencing enhancements or off-the-record hearings.</p>
-
     <p>#JoeysLaw seeks to expose these injustices and fight for fair treatment under the law. This is about accountability, truth, and reform.</p>
   </section>
 
   <section class="contact">
     <h2>Contact Us</h2>
     <p>Have questions or want to help? Reach out directly.</p>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSIM3r5K3b7Rt7B96tKd5YzVhzgrXKyR9Gy4FstQ9Mb7LARQ/viewform?embedded=true">Loading…</iframe>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScSIM3r5K3b7Rt7B96tKd5YzVhzgrXKyR9Gy4FstQ9Mb7LARQ/viewform?embedded=true" title="Contact Form"></iframe>
   </section>
 
   <section class="share-buttons">
     <h2>Share the Movement</h2>
     <a href="https://twitter.com/intent/tweet?text=Join%20the%20fight%20for%20justice%20at%20%23JoeysLaw%20joeyslaw.us" target="_blank">
-      <i class="fab fa-x"></i>
-      <span>Share on X</span>
+      <i class="fab fa-x"></i><span>Share on X</span>
     </a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=https://joeyslaw.us" target="_blank">
-      <i class="fab fa-facebook"></i>
-      <span>Share on Facebook</span>
+      <i class="fab fa-facebook"></i><span>Share on Facebook</span>
     </a>
     <a href="https://www.instagram.com/" target="_blank">
-      <i class="fab fa-instagram"></i>
-      <span>Share on Instagram</span>
+      <i class="fab fa-instagram"></i><span>Share on Instagram</span>
     </a>
   </section>
 
@@ -211,7 +86,6 @@
     <a href="press-release.pdf" download>📰 Press Release (PDF)</a>
   </section>
 
-  <!-- Floating petition button -->
   <a href="https://chng.it/JHFH7rnTCS" target="_blank" class="floating-petition">✍️ Sign Now</a>
 
   <footer>
