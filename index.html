@@ -97,6 +97,27 @@
       margin-top: 1rem;
     }
 
+    /* Floating Petition Button */
+    .floating-petition {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background: #111;
+      color: #ffc107;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+    .floating-petition:hover {
+      background: #ffc107;
+      color: #111;
+    }
+
     /* MOBILE OPTIMIZATION */
     @media screen and (max-width: 600px) {
       section {
@@ -114,6 +135,12 @@
       }
       iframe {
         height: 700px;
+      }
+      .floating-petition {
+        bottom: 15px;
+        right: 15px;
+        padding: 0.85rem 1.25rem;
+        font-size: 0.9rem;
       }
     }
   </style>
@@ -169,6 +196,9 @@
     <a href="case-summary.pdf" download>📄 Case Summary (PDF)</a>
     <a href="press-release.pdf" download>📰 Press Release (PDF)</a>
   </section>
+
+  <!-- Floating petition button -->
+  <a href="https://chng.it/JHFH7rnTCS" target="_blank" class="floating-petition">✍️ Sign Now</a>
 
   <footer>
     <p>&copy; 2025 #JoeysLaw | Contact: wearejusticeforjoey@gmail.com</p>
